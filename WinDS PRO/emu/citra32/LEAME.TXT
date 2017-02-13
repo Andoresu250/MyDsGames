@@ -1,0 +1,19 @@
+Citra | x86 - 32 bits
+
+El codigo fuente puede encontrarse en:
+https://github.com/citra-emu/citra-bleeding-edge
+
+CAMBIOS:
+*Se agrega la licencia GLPv2 en license.txt
+*Se incluye opengl32_x86.exe y opengl32_x64.exe
+*bit_set.h: se divide la entrada en _BitScanForward64() y se muestra un mensaje en el log
+*Se incrementa el tamaño del buffer de fotogramas a 20 MB
+*Se soluciona cierre con grandes valores de frameskip
+*Se cambia la tasa de refresco a 50Hz
+*Se define XBYAK64, se reduce el valor de dummyAddr y se evita el error ERR_OFFSET_IS_TOO_BIG
+*Se cambia el titulo de la ventana
+*Se cambia el fondo de la ventana a negro, motor de audio a sdl2, tamaño de la pantalla
+	region a EUR, confirmacion para cerrar y se evita spamm en el log.
+*Se agrega una version de shader_jit para x86 basada en una antigua version del emulador Dolphin
+*Se renombra el ejecutable
+*Se habilita resolucion escalada por defecto
